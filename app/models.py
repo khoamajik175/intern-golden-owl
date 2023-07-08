@@ -5,6 +5,6 @@ class Product(models.Model):
     id=models.IntegerField(primary_key=True)
     image=models.CharField(max_length=200)
     name=models.CharField(max_length=50)
-    description=models.CharField(max_length=350)
+    description=models.CharField(max_length=500)
     price=models.FloatField()
     color=models.CharField(max_length=10)

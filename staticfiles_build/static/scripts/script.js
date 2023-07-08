@@ -41,15 +41,15 @@ $('.item_add_button').click(async function (e) {
         url: "/new-cart",
         data: data,
         success: function (response) {
-            checkEmty()
+            $('.EmptyBlock').hide()
             $('.cart_body').append(response)
-       
+           
             console.log("hidden")
            
         }
     });
 
-   
+
     await $.ajax({
         type: "get",
         url: "/calc-totalsum",

@@ -24,6 +24,10 @@
         {
             "src": "/(.*)",
             "dest": "simpleshopping/wsgi.py"
+        },
+        {
+            "src": "/admin/",
+            "dest": "simpleshopping/wsgi.py"
         }
     ]
 }
